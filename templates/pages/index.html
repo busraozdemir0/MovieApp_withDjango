@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2 class="display-4">Film Günlüğü</h2>
+        <p class="lead">En güzel sinema filmleri hakkında bilgileri sayfamızdan edinebilirsiniz...</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img" src="{% static 'img/hizliveofkeli.jpg' %}" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="card-title">Hızlı ve Öfkeli</div>
+                        <p class="card-text">Dominic Toretto, Los Angeles sokaklarına karanlık çöktükten sonra sınır tanımadan otomobil yarışları yapan bir grubun lideridir. Polis, sokaklarda dehşet saçan Toretto'nun aynı zamanda hırsızlık yaptığından; yüksek değerdeki elektronik aletleri çaldığından da şüphe etmektedir. Polise göre Toretto'yu yakalamanın en iyi yolu; aşırı hız düşkünü çetenin içine bir dedektif yerleştirmek ve onları suçüstü yakalamaktır. Bunun için genç dedektif Brian O’Conner görevlendirilir. Brian Earl Spilner adıyla çeteye girer. Başta her şey umulduğu gibi gitmektedir. Ancak genç dedektif O’Conner, Dominic'in güzel ve çekici kız kardeşi Mia'ya aşık olunca işler değişir.</p>
+                        <p class="card-text">
+                            <small class="text-muted">2 yıl önce</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img" src="{% static 'img/matrix.jpg' %}" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="card-title">Matrix</div>
+                        <p class="card-text">Matrix filminde iyi bir yazılım şirketinde çalışmakta olan Thomas Anderson gece olduğunda Neo adındaki bir program kırmaya çalışarak ve Matrix araştırması yaparak günlerini geçirmektedir. İlginç bir şekilde Trinity ile Morpheus’la tanışan Neo hayatının yaşamakta olduğu dünyanın gerçekte sadece beyninde gerçekleşmekte olan bir simülasyon olduğunu öğrenir ve böylece kendini bu durumdan çıkarmak adına Morpheus'un önderliğindeki bir ekibe katılmaktadır.
+
+                            Matrix dizisindeki Neo asıl dünyada ilk nefes aldıktan sonra bu simülasyona tekrar girer ve Matrix'in ne olduğunu kavramaya çalışır. Bu filmdeki olaylar teknolojinin son derece gelişmekte olduğu çok ileri bir tarihte yaşanmakta ve yapay zekaya sahip olan makinelerin yaratıldığı bir dünya üzerinde geçmektedir. Filmin konusu bu şekilde devam etmekte olup türü bilimkurgudur. </p>
+                        <p class="card-text">
+                            <small class="text-muted">5 ay önce</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img" src="{% static 'img/lucy.jpg' %}" alt="">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="card-title">Lucy</div>
+                        <p class="card-text">Tayvan'ın başkenti Taipei'nin suça batmış yeraltı dünyası sokak çeteleri, mafya ve işbirlikçi polisler tarafından yönetilirken en aktif ticaret, uyuşturucu ağı üzerinden yürütülür. Eğlenmeyi seven, sıradan bir genç kadın olan Lucy, birkaç gece beraber takıldığı Richard yüzünden kendisini bir anda en azılı uyuşturucu şebekelerinin birinin içine düşmüş bulur. Vücudunun içine kurye olması için yerleştirilen yeni bir tür sentetik uyuşturucu, beklenmedik bir şekilde Lucy'nin vücuduna nüfuz edip kanına karışmaya başlayınca mucizevi bir durumla yüzleşir. Lucy'in damarlarında dolaşan kimyasallar, ona insanüstü yetenekler kazandırmıştır! Artık akıl okuma, telekinezi ve acıyı hissetmeme gibi güçlere sahip olan genç kadın beyinin tüm algı kapılarını sonuna kadar açacaktır... 
+                            Ünlü Fransız sinemacı Luc Besson'un senaryosunu yazıp yönetmenliğini yaptığı filmin başrolünde Scarlett Johansson bulunuyor.  </p>
+                        <p class="card-text">
+                            <small class="text-muted">4 gün önce</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<header>
+    <div class=" navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container">
+            <a href="{% url 'index' %}" class="navbar-brand">Movie App</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'movies' %}" class="nav-link">Filmler</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                {% if user.is_authenticated %} <!-- Kullanıcı giriş yaptıysa gösterilecek kısım-->
+                    <li class="nav-item">
+                        <a href="javascript: {document. getElementById('logout').submit()}" class="nav-link">({{ user.username }}) Çıkış Yap</a>
+                        <form action="{% url 'logout' %}" method="POST" id="logout">
+                            {% csrf_token %}
+                            <input type="hidden">
+                        </form>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href="{% url 'login' %}" class="nav-link">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'register' %}" class="nav-link">Kayıt Ol</a>
+                    </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</header>
